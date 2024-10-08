@@ -32,7 +32,7 @@ body {
 
 .header-content {
   width: 1070px;
-  height: 680px;
+  
 }
 
 h1,
@@ -76,11 +76,17 @@ img {
 .header-nav-list {
   display: flex;
   column-gap: 40px;
-font-weight: 600;
+}
+
+.header-nav-item {
+  font-weight: 600;
     font-size: 12px;
     letter-spacing: 0.1em;
     color: #ffffff;
-  
+}
+
+.header-nav-item:hover, .header-nav-item:focus {
+color: #ff6c00;
 }
 
 .header-phone {
@@ -90,27 +96,30 @@ font-weight: 600;
   text-transform: uppercase;
   color: #ffffff;
 }
+.header-phone:hover, .header-phone:focus {
+  color: #ff6c00;
+}
 
 .contact-wrapper {
   display: flex;
-align-items: center;
-column-gap: 40px;
+  align-items: center;
+  column-gap: 40px;
 }
 
 .header-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 52px;
+  padding-top: 40px;
   margin-left: 38px;
 }
 
-.header-container{
+.header-container {
   background-image: url(../css/images/Slider\ img\ 3.jpg);
-background-size: cover;
-   
-background-position: center;}
+  background-size: cover;
 
+  background-position: center;
+}
 
 .header-button {
   font-weight: 600;
@@ -118,11 +127,15 @@ background-position: center;}
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #ffffff;
-border: 1px solid #ff6c00;
-    border-radius: 25px;
-    width: 160px;
-    height: 40px;
-    background: transparent;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  width: 160px;
+  height: 40px;
+  background: transparent;
+}
+
+.header-button:hover, .header-button:focus {
+  background: #ff6c00;
 }
 
 .hero-title {
@@ -133,63 +146,99 @@ border: 1px solid #ff6c00;
   color: #ffffff;
 }
 
-
-
 /* ============ SIDEBAR STYLES =========== */
-.sidebar-layaut {
-  display: flex;
-  width: 150px;
-  height: 680px;
-  background-color: #fafafa;
-}
 
-.sidebar-layer{
+
+.sidebar-layer {
   max-width: 155px;
 }
-.sidebar-section-list{
+.sidebar-section-item {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+.sidebar-section-item:hover, .sidebar-section-item:focus {color: #ff6c00;
+
+}
+.sidebar-section-list {
   display: flex;
   gap: 100px;
-background: #ffffff;
+  background: #ffffff;
   padding-top: 32px;
-  padding-bottom: 111px;
+
   flex-direction: column;
-      align-items: center;
+  align-items: center;
 }
 
 .sidebar-section-item a {
   display: inline-block;
-    transform: rotate(-90deg);
- 
+  transform: rotate(-90deg);
 }
-.sidebar-section-item:nth-child(2)
-{ margin-top: 282px;}
-
-.header-wraper
+.sidebar-section-logo
 {
-  display: flex;
-      justify-content: center;
-      }
+display: flex;
+    transform: rotate(-90deg);
+}
+.sidebar-section-item:nth-child(2) {
+  margin-top: 262px;
+}
 
-      .hero-wraper {
-        display: flex;
-        flex-direction: column;
-        row-gap: 20px;
-        margin-left: 100px;
-        margin-top: 184px;
-      }
-            .hero-descr {
-              font-family: "Open Sans", sans-serif;
-                font-weight: 600;
-                font-size: 11px;
-                letter-spacing: 0.1em;
-                text-transform: uppercase;
-                color: rgba(157, 164, 189, 0.6);
-            }
-            .hero-text {
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 1.66667;
-                letter-spacing: 0.02em;
-                color: #9da4bd;
-                max-width: 461px;
-            }
+.header-wraper {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-wraper {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 100px;
+  margin-top: 184px;
+}
+.hero-descr {
+  display: flex;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+}
+.hero-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66667;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+  max-width: 461px;
+}
+
+
+
+.hero-descr::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 60px;
+  background: rgba(157, 164, 189, 0.6);
+  transform: rotate(-90deg);
+  margin-right: 50px;
+  margin-left: 30px;
+}
+ .curent::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 60px;
+  background: rgba(157, 164, 189, 0.6);
+
+    margin-left: 40px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+  
+}
+
